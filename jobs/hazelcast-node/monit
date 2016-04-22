@@ -1,0 +1,5 @@
+check process hazelcast-node
+  with pidfile /var/vcap/sys/run/hazelcast-node/hazelcast-node.pid
+  start program "/var/vcap/jobs/hazelcast-node/bin/monit_debugger hazelcast-node_ctl '/var/vcap/jobs/hazelcast-node/bin/ctl start'"
+  stop program "/var/vcap/jobs/hazelcast-node/bin/monit_debugger hazelcast-node_ctl '/var/vcap/jobs/hazelcast-node/bin/ctl stop'"
+  group vcap
