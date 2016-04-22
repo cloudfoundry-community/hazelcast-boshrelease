@@ -1,0 +1,9 @@
+---
+applications:
+- name: hazelcast-service-broker
+  memory: 4096M
+  instances: 1
+  path: /Users/rahul/Hazelcast/cloudfoundry/hazelcast-cloudfoundry/build/libs/hazelcast-cf-service-broker.war
+  buildpack: https://github.com/wildnez/java-buildpack.git
+  stack: cflinuxfs2
+  
