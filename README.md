@@ -1,5 +1,14 @@
 # BOSH Release for hazelcast
 
+
+
+
+ http://blog.hazelcast.com/cloud-foundry/ https://github.com/hazelcast/hazelcast-cloudfoundry
+
+
+
+
+
 ## Usage
 
 To use this bosh release, first upload it to your bosh:
