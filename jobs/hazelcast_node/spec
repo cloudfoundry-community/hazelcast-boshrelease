@@ -1,5 +1,5 @@
 ---
-name: hazelcast-node
+name: hazelcast_node
 packages: []
 templates:
   bin/ctl: bin/ctl
