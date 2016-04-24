@@ -3,10 +3,8 @@ set -e
 
 
 cd ${BUILD_DIR}/hazelcast-cloudfoundry
-mvn -B -e clean install -DskipTests=true
-mv target/cloudstack-cpi-core-0.0.1-SNAPSHOT.jar  ${BUILD_DIR}/cloudstack-cpi-core.jar
 
-gradlew build
+./gradlew build
 mv ./build/libs/hazelcast-cf-service-broker.war ${BUILD_DIR}/hazelcast-cf-service-broker.war
 
 
