@@ -1,0 +1,12 @@
+---
+logging:
+  level: DEBUG
+
+spring:
+  main:
+    show-banner: true
+  datasource:
+    url:  jdbc:hsqldb:file:/var/vcap/store/cloudstack_cpi/db
+  jpa:
+    hibernate:
+      ddl-auto: none

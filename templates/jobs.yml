@@ -11,7 +11,7 @@ update:
 jobs:
   - name: hazelcast-broker
     templates:
-    - name: hazelcast-broker
+    - name: broker
       release: hazelcast
     instances: 1
     persistent_disk: 0
