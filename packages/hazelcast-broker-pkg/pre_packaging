@@ -1,0 +1,17 @@
+set -e
+. common/setup-java-prepackaging.sh
+
+
+cd ${BUILD_DIR}/hazelcast-cloudfoundry
+mvn -B -e clean install -DskipTests=true
+mv target/cloudstack-cpi-core-0.0.1-SNAPSHOT.jar  ${BUILD_DIR}/cloudstack-cpi-core.jar
+
+gradlew build
+mv ./build/libs/hazelcast-cf-service-broker.war ${BUILD_DIR}/hazelcast-cf-service-broker.war
+
+
+#cd ${BUILD_DIR}
+#rm -rf bosh-cloudstack-cpi-core
+
+cleanup_java
+
