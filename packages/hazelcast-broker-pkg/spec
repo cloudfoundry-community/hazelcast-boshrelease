@@ -1,0 +1,8 @@
+---
+name: hazelcast-broker-pkg
+dependencies: []
+files:
+- hazelcast-cloudfoundry/**/*
+- openjdk/*
+#- common/setup-java-prepackaging.sh
+
