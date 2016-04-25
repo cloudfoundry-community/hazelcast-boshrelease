@@ -11,5 +11,7 @@ templates:
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
   config/hazelcast.xml.erb: config/hazelcast.xml
+  config/hazelcast-consul-discovery.xml: config/hazelcast-consul-discovery.xml
+  config/hazelcast-full.xml: config/hazelcast-full.xml
   config/logback.xml.erb: config/logback.xml  
     
