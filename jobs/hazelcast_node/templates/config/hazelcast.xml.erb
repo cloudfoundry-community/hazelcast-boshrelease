@@ -217,61 +217,6 @@
 																		"healthCheckTcpIntervalSeconds":30
                                                                       }
                                                                   ]]></property>
-                                                                  
-                                                                  
-                                                                  
-                      <!-- The configuration below is for ExplicitIpPortRegistrator:
-                           
-                                    - registerWithIpAddress: register with this IP in Consul
-                                    
-                                    - registerWithPort: register with this PORT in Consul
-                                                           
-                                    - healthCheckProvider: the type of health check to use (script or http). 
-                                                           It defaults to "org.bitsofinfo.hazelcast.discovery.consul.ScriptHealthCheckBuilder" if 
-                                    			           this property is not provided.            
-                                                       
-                                                       
-                                    Properties consumed by: org.bitsofinfo.hazelcast.discovery.consul.ScriptHealthCheckBuilder
-                                                                         
-                                    - healthCheckScript: can be anything you want Consul to do to determine health. 
-                                                         Variables #MYIP/#MYPORT will be replaced with this node's IP/PORT
-                                                         @see https://www.consul.io/docs/agent/checks.html
-                                                         
-                                    - healthCheckScriptIntervalSeconds: self explanatory
-                                    
-                                    
-                                    Properties consumed by: org.bitsofinfo.hazelcast.discovery.consul.HttpHealthCheckBuilder
-                                    
-                                    - healthCheckHttp: valid hostname and port to use for health check. You can provide optional
-                                    			       path to a specific script. Variables #MYIP/#MYPORT will be replaced with 
-                                    			       this node's IP/PORT (port being hazelcast port, but you likely would not
-                                    			       want to use that for an http check)
-                                    
-                                    - healthCheckHttpIntervalSeconds: self explanatory
-                                    
-                                   
-                                    Properties consumed by: org.bitsofinfo.hazelcast.discovery.consul.TcpHealthCheckBuilder
-                                    
-                                    - healthCheckTcp: valid IP and port to use for health check. Variables #MYIP/#MYPORT will be replaced with 
-                                    			       this node's IP/PORT (port being hazelcast port)
-                                    
-                                    - healthCheckTcpIntervalSeconds: self explanatory
-                     -->
-                      <property name="consul-registrator-config"><![CDATA[
-                                                                      {
-                                                                        "registerWithIpAddress":"192.168.0.208",
-                                                                        "registerWithPort":5701, 
-                                                                        "healthCheckProvider":"org.bitsofinfo.hazelcast.discovery.consul.HttpHealthCheckBuilder",
-                                                                        "healthCheckScript":"exec 6<>/dev/tcp/#MYIP/#MYPORT || (exit 3)",
-                                                                        "healthCheckScriptIntervalSeconds":30,
-                                                                        "healthCheckHttp":"http://#MYIP:80",
-																		"healthCheckHttpIntervalSeconds":30,
-																		"healthCheckTcp":"#MYIP:#MYPORT",
-																		"healthCheckTcpIntervalSeconds":30
-                                                                      }
-                                                                  ]]></property>
-                     -->
-                     
                      
                  </properties>
                </discovery-strategy>
