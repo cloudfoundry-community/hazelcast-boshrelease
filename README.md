@@ -3,7 +3,10 @@
 
 
 
- http://blog.hazelcast.com/cloud-foundry/ https://github.com/hazelcast/hazelcast-cloudfoundry
+* http://blog.hazelcast.com/cloud-foundry/
+* https://github.com/hazelcast/hazelcast-cloudfoundry
+* http://hazelcast.org/deployment-operations-guide/
+* https://github.com/bitsofinfo/hazelcast-consul-discovery-spi
 
 
 
