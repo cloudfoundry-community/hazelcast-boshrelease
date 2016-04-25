@@ -1,0 +1,3 @@
+[submodule "src/hazelcast-bosh-uberjar"]
+	path = src/hazelcast-bosh-uberjar
+	url = https://github.com/poblin-orange/hazelcast-bosh-uberjar
