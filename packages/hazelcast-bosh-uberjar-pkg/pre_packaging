@@ -2,14 +2,12 @@ set -e
 . common/setup-java-prepackaging.sh
 
 
-cd ${BUILD_DIR}/hazelcast-cloudfoundry
-
-./gradlew build
-mv ./build/libs/hazelcast-cf-service-broker.war ${BUILD_DIR}/hazelcast-cf-service-broker.war
+cd ${BUILD_DIR}/hazelcast-bosh-uberjar
 
 
-#cd ${BUILD_DIR}
-#rm -rf bosh-cloudstack-cpi-core
+./mvnw clean install
+mv ./target/hazelcast-bosh-uberjar-0.0.1-SNAPSHOT-jar-with-dependencies.jar ${BUILD_DIR}/hazelcast-bosh-uberjar.jar
+
 
 cleanup_java
 
