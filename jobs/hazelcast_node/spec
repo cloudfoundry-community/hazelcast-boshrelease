@@ -14,4 +14,19 @@ templates:
   config/hazelcast-consul-discovery.xml: config/hazelcast-consul-discovery.xml
   config/hazelcast-full.xml: config/hazelcast-full.xml
   config/logback.xml.erb: config/logback.xml  
+
+properties:
+  hazelcast.group.name:
+    description:
+      name of the hazelcast group
+
+  hazelcast.group.password:
+    description:
+      password for the hazelcast group
+
+  hazelcast.consul-service-name:
+    description:
+      name of the consul cluster
+    default: hz-discovery-test-cluster
+  
     

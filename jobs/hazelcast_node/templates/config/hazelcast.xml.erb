@@ -4,8 +4,8 @@
            xmlns="http://www.hazelcast.com/schema/config"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <group>
-        <name>hazelcast-consul-discovery-spi</name>
-        <password>haz3lcast1</password>
+        <name><%= p('hazelcast.group.name') %></name>
+        <password><%= p('hazelcast.group.password') %></password>
     </group>
 
     <properties>
@@ -40,7 +40,7 @@
                               IF a ConsulRegistrator is configured below: this node will be registered under this same service
                               name. This name should be UNIQUE to your hazelcast cluster! (i.e. like your group name above..)
                        -->
-                      <property name="consul-service-name">hz-discovery-test-cluster</property>
+                      <property name="consul-service-name"><%= p('hazelcast.consul-service-name') %></property>
                       
                       <!-- 
                             When discovering peer nodes, only return those that are healthy (true)
@@ -57,7 +57,7 @@
                            in Consul who are part of the same cluster and will be discovered and treated as peer
                            members of the hazelcast cluster.      
                       -->
-                      <property name="consul-service-tags">hazelcast,test1</property>
+                      <property name="consul-service-tags">hazelcast</property>
                       
                                             
                       <!--  
