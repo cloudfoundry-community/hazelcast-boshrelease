@@ -29,4 +29,8 @@ properties:
       name of the consul cluster
     default: hz-discovery-test-cluster
   
+  hazelcast.jvm.memoryMo:
+    description:
+      max memory to allocate to JVM
+
     
