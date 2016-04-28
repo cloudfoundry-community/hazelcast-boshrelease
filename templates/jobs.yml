@@ -18,6 +18,38 @@ jobs:
     resource_pool: small_z1
     networks: (( param "please set broker networks" ))
 
+
+  - name: broker-registrar  
+    lifecycle: errand
+    instances: 1
+    resource_pool: small_z1
+    networks: (( param "set the errand network configs here" ))
+    templates:
+    - name: broker-registrar
+      release: broker-registrar
+
+  - name: broker-deregistrar
+    lifecycle: errand
+    instances: 1
+    resource_pool: small_z1
+    networks: (( param "set the errand network configs here" ))
+    templates:
+    - name: broker-deregistrar
+      release: broker-registrar
+
+
 networks: (( param "please set networks" ))
 
-properties: {}
+properties:  
+  # other things are likely here too
+  cf:
+    admin_username: (( param "CF Admin Username" ))
+    admin_password: (( param "CF Admin Password" ))
+    api_url: (( param "CF API URL" ))
+  broker:
+    name: (( param "Broker name (registered with CF)" ))
+    host: (( param "hostname/ip of broker node" ))
+    port: 443 # or maybe 80?
+    protocol: https # or maybe http?
+    username: (( param "broker API username" ))
+    password: (( param "broker API password" ))
