@@ -1,0 +1,5 @@
+---
+name: hazelcast-mancenter-pkg
+dependencies: []
+files:
+- hazelcast-mancenter/mancenter-3.6.2.war

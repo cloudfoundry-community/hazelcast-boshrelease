@@ -1,0 +1,5 @@
+check process hazelcast_mancenter
+  with pidfile /var/vcap/sys/run/hazelcast_mancenter/hazelcast_mancenter.pid
+  start program "/var/vcap/jobs/hazelcast_mancenter/bin/monit_debugger hazelcast_mancenter_ctl '/var/vcap/jobs/hazelcast_mancenter/bin/ctl start'"
+  stop program "/var/vcap/jobs/hazelcast_mancenter/bin/monit_debugger hazelcast_mancenter_ctl '/var/vcap/jobs/hazelcast_mancenter/bin/ctl stop'"
+  group vcap

@@ -212,8 +212,6 @@
                                                                         "healthCheckProvider":"org.bitsofinfo.hazelcast.discovery.consul.ScriptHealthCheckBuilder",
                                                                         "healthCheckScript":"exec 6<>/dev/tcp/#MYIP/#MYPORT || (exit 3)",
                                                                         "healthCheckScriptIntervalSeconds":30,
-                                                                        "healthCheckHttp":"http://some.endpoint.on.this.app:80",
-																		"healthCheckHttpIntervalSeconds":30,
 																		"healthCheckTcp":"ip:port",
 																		"healthCheckTcpIntervalSeconds":30
                                                                       }
