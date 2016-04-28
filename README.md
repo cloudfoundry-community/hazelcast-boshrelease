@@ -1,14 +1,20 @@
-# BOSH Release for hazelcast
+# BOSH Release for Hazelcast Data Grid
 
+This is an experimental bosh release for Hazelcast Data Grid
 
-
-
+use full links
 * http://blog.hazelcast.com/cloud-foundry/
 * https://github.com/hazelcast/hazelcast-cloudfoundry
 * http://hazelcast.org/deployment-operations-guide/
 * https://github.com/bitsofinfo/hazelcast-consul-discovery-spi
 
+inspiration
+* 
 
+
+reused bosh release:
+* https://blog.starkandwayne.com/2016/01/06/a-generic-bosh-release-for-registering-service-brokers/
+*  
 
 
 
