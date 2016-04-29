@@ -27,7 +27,7 @@ properties:
   hazelcast.consul-service-name:
     description:
       name of the consul cluster
-    default: hz-discovery-test-cluster
+    default: hz-consul-discovery-cluster
   
   hazelcast.jvm.memoryMo:
     description:
