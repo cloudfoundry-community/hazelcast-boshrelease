@@ -6,6 +6,7 @@ use full links
 * http://blog.hazelcast.com/cloud-foundry/
 * https://github.com/hazelcast/hazelcast-cloudfoundry
 * http://hazelcast.org/deployment-operations-guide/
+* http://docs.hazelcast.org/docs/3.6/manual/html-single/index.html#system-properties
 * https://github.com/bitsofinfo/hazelcast-consul-discovery-spi
 
 inspiration

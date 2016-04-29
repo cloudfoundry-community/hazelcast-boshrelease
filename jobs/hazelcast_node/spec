@@ -16,6 +16,9 @@ templates:
   config/logback.xml.erb: config/logback.xml  
 
 properties:
+  hazelcast-mancenter.host:
+    description: host of management center (node will connect to it. more than 2 nodes requires hazelcast commercial licence
+
   hazelcast.group.name:
     description:
       name of the hazelcast group

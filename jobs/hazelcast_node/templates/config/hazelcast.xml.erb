@@ -8,6 +8,12 @@
         <password><%= p('hazelcast.group.password') %></password>
     </group>
 
+    <management-center enabled="true">
+        http://<%= p('hazelcast-mancenter.host') %>:9000/mancenter
+    </management-center>
+
+
+    <!-- see http://docs.hazelcast.org/docs/3.6/manual/html-single/index.html#system-properties for reference -->
     <properties>
         <property name="hazelcast.discovery.enabled">true</property>
         <property name="hazelcast.shutdownhook.enabled">false</property>

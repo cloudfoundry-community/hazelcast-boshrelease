@@ -13,5 +13,5 @@ templates:
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
   config/logback.xml.erb: config/logback.xml
   
-  properties: []
+properties: {} 
   

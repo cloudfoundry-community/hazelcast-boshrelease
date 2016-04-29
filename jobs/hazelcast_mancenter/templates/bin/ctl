@@ -20,7 +20,8 @@ case $1 in
 	exec chpst -u vcap:vcap $JAVA_HOME/bin/java  \
                -server -XX:+UseG1GC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=25  -Xmx256M \
                -Dlogback.configurationFile=$JOB_DIR/config/logback.xml \
-               -jar /var/vcap/packages/hazelcast-mancenter-pkg/mancenter-3.6.2.war 9000 /var/vcap/sys/run/hazelcast_mancenter \
+               -Dhazelcast.mancenter.home=/var/vcap/store/hazelcast_mancenter/   \
+               -jar /var/vcap/packages/hazelcast-mancenter-pkg/mancenter-3.6.2.war 9000 mancenter \
                 >>$LOG_DIR/$JOB_NAME.log 2>&1
          
 
