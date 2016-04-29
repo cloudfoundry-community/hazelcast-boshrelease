@@ -6,7 +6,7 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
  # Available variables
 # $BOSH_COMPILE_TARGET - where this package & spec'd source files are available
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
-export HOME=/var/vcap
+#cd hazelcast-mancenter-pkg
+ls -lRt ${BOSH_COMPILE_TARGET}/hazelcast-mancenter
+cp  ${BOSH_COMPILE_TARGET}/hazelcast-mancenter/*.war ${BOSH_INSTALL_TARGET}
 
-
-cp -r ${BOSH_COMPILE_TARGET}/*.war ${BOSH_INSTALL_TARGET}
