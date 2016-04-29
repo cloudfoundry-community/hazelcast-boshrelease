@@ -10,7 +10,7 @@ use full links
 * https://github.com/bitsofinfo/hazelcast-consul-discovery-spi
 
 inspiration
-* 
+* https://github.com/cloudfoundry-community/memcache-release
 
 
 reused bosh release:
