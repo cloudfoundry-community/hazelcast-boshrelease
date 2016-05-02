@@ -1,6 +1,6 @@
 [submodule "src/hazelcast-bosh-uberjar"]
 	path = src/hazelcast-bosh-uberjar
-	url = https://github.com/poblin-orange/hazelcast-bosh-uberjar
+	url = https://github.com/cloudfoundry-community/hazelcast-bosh-uberjar
 [submodule "src/hazelcast-cloudfoundry"]
 	path = src/hazelcast-cloudfoundry
 	url = https://github.com/hazelcast/hazelcast-cloudfoundry
