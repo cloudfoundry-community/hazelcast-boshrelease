@@ -1,0 +1,53 @@
+---
+packages:
+- name: openjdk
+  version: 93c072891062f43e6a7fad1f3232064da90429af
+  fingerprint: 93c072891062f43e6a7fad1f3232064da90429af
+  sha1: 089bd28c40ed8026c6010a754c4d91559ec5d5a2
+  dependencies: []
+- name: java-common
+  version: 018744938b5a691527c626963211f4ba4b5772bf
+  fingerprint: 018744938b5a691527c626963211f4ba4b5772bf
+  sha1: 34170add8e112929558ba6c926e6a0b44fb046d2
+  dependencies: []
+- name: hazelcast-mancenter-pkg
+  version: bd6b98dee72b3674b83b929ecf2db5c5f12fbb7f
+  fingerprint: bd6b98dee72b3674b83b929ecf2db5c5f12fbb7f
+  sha1: 010f3191c6e599780aed6bb93c7dec7d393a0947
+  dependencies: []
+- name: cli
+  version: 0f19a1df7ef777208cc3bfcdc875b2b56613ab40
+  fingerprint: 0f19a1df7ef777208cc3bfcdc875b2b56613ab40
+  sha1: e87940a4e6206363390284afab9d0d000e2c05d5
+  dependencies: []
+- name: hazelcast-bosh-uberjar-pkg
+  version: 552a9e2eded6d22a5d9374db14e94ad910c9ce20
+  fingerprint: 552a9e2eded6d22a5d9374db14e94ad910c9ce20
+  sha1: 2cb3bd1f2ce17473337e1292bfeaccf50369edef
+  dependencies: []
+- name: hazelcast-broker-pkg
+  version: cedaa1b6c68c0585acb7fdbd51a662f695144bee
+  fingerprint: cedaa1b6c68c0585acb7fdbd51a662f695144bee
+  sha1: fbe65873ea97660cc3b3b403338ec1b947f0f528
+  dependencies: []
+jobs:
+- name: hazelcast_node
+  version: 8818ef8395ff8ae0471cfff6f98072c495b1eb56
+  fingerprint: 8818ef8395ff8ae0471cfff6f98072c495b1eb56
+  sha1: aabe0181ef022aa8ec0cc456fa2346d910e2f863
+- name: broker
+  version: c1fccace3c3dda12b3d76ed4ae99375d408771cb
+  fingerprint: c1fccace3c3dda12b3d76ed4ae99375d408771cb
+  sha1: 87c20aa465075d42afcf7c3fbb7a51cccbedd95f
+- name: hazelcast_mancenter
+  version: af6a8b9249ab9f3c570e1db624ab64336f590842
+  fingerprint: af6a8b9249ab9f3c570e1db624ab64336f590842
+  sha1: 601a16e0eb1d553fd09f8105bcddcbba7e17432f
+license:
+  version: 8ca608bd3578ee17c21ec68853509d039dc27d74
+  fingerprint: 8ca608bd3578ee17c21ec68853509d039dc27d74
+  sha1: 44d6059c26272f64040e3d1396f1125f42ccdb2f
+commit_hash: 7880128e
+uncommitted_changes: true
+name: hazelcast
+version: '1'
