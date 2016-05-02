@@ -1,1 +1,13 @@
---- {}
+---
+openjdk/openjdk.tar.gz:
+  object_id: d6fe29a9-09c1-4785-8c19-bfa92fc18bd7
+  sha: 9fc65908420c92047346e5bcc66fee0aad422c5e
+  size: 126476497
+hazelcast-mancenter/mancenter-3.6.2.war:
+  object_id: 951838bd-dd8f-4e13-adee-77fb29f84710
+  sha: 052113cfd43b159489245dc65f0232c58bfc742d
+  size: 35743282
+cli/cli-linux-amd64-6.17.0.tgz:
+  object_id: 21aefb64-8889-41e3-aa8c-b6512c5c286c
+  sha: c552c8f4436a63c2034d47f66fd218426c632112
+  size: 6153376
