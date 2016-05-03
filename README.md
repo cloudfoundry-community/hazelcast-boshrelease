@@ -1,5 +1,8 @@
 # BOSH Release for Hazelcast Data Grid
 
+![sample1](http://docs.hazelcast.org/docs/3.6/manual/html-single/assets/img/logo.png)
+
+
 This is an experimental bosh release for Hazelcast Data Grid
 
 use full links
