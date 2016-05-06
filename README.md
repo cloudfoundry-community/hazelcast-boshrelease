@@ -9,12 +9,13 @@ Hazelcast 3.6 brings the ability to plug discovery mechanism.
 
 Features:
 * integrates Hazelcast multi vm cluster in Bosh environment
-* provides prepackaged Hazelcast Management Center
+* provides prepackaged Hazelcast Management Center (limited to 2 hosts max cluster without commercial license)
 * leverages Hazelcast 3.6+ discovery mechanism, with consul connector
 ** just changing Bosh jobs/instances group size and the hazelcast clusters reconfigures itself with consul discovery 
 
 Limitations:
 * cloudfoundry broker not yet wired to Hazelcast broker
+* expose in bosh manifest more Hazelcast cluster tuning options
 
 
 use full links
@@ -27,10 +28,11 @@ use full links
 inspiration
 * https://github.com/cloudfoundry-community/memcache-release
 
-
 reused bosh release:
 * https://blog.starkandwayne.com/2016/01/06/a-generic-bosh-release-for-registering-service-brokers/
-  
+* https://github.com/Orange-OpenSource/java-openjdk-boshrelease
+* https://github.com/cloudfoundry-community/consul-boshrelease
+* https://github.com/cloudfoundry-community/route-registrar-boshrelease
 
 
 
