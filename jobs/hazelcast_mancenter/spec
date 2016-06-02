@@ -5,6 +5,9 @@ packages:
 - cli
 - java-common
 - openjdk
+provides:
+- name: mancenter
+  type: mancenter
 templates:
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger

@@ -4,6 +4,9 @@ packages:
 - java-common
 - openjdk
 - hazelcast-bosh-uberjar-pkg
+consumes:
+- name: mancenter
+  type: mancenter
 templates:
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
