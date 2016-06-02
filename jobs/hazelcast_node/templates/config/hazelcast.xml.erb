@@ -9,7 +9,7 @@
     </group>
 
     <management-center enabled="true">
-        http://<%= p('hazelcast-mancenter.host') %>:9000/mancenter
+        http://<%= link("mancenter").instances[0].address %>:9000/mancenter
     </management-center>
 
 
