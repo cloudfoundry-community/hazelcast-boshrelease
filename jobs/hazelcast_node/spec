@@ -4,9 +4,17 @@ packages:
 - java-common
 - openjdk
 - hazelcast-bosh-uberjar-pkg
+
 consumes:
 - name: mancenter
   type: mancenter
+- name: peers
+  type: hazelcast_peers
+  
+ provides:
+- name: peers
+  type: hazelcast_peers
+ 
 templates:
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
