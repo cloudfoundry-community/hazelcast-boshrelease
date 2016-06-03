@@ -11,7 +11,8 @@ Features:
 * integrates Hazelcast multi vm cluster in Bosh environment
 * provides prepackaged Hazelcast Management Center (limited to 2 hosts max cluster without commercial license)
 * leverages Hazelcast 3.6+ discovery mechanism, with consul connector
-** just changing Bosh jobs/instances group size and the hazelcast clusters reconfigures itself with consul discovery 
+* alternative static tcp-ip management, thanks to bosh 2.0 bosh links feature 
+** just changing Bosh jobs/instances group size and the hazelcast clusters reconfigures itself with consul discovery, or bosh links 
 
 Limitations:
 * cloudfoundry broker not yet wired to Hazelcast broker
