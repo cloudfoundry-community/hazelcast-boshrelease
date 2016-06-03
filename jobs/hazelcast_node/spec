@@ -11,7 +11,7 @@ consumes:
 - name: peers
   type: hazelcast_peers
   
- provides:
+provides:
 - name: peers
   type: hazelcast_peers
  
