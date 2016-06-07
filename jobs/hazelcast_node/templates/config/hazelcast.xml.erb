@@ -27,7 +27,7 @@
             <multicast enabled="false"/>
             <aws enabled="false"/>
               
-              <% if p('hazelcast.use_consul_discovery')? %>
+              <% if_p('hazelcast.use_consul_discovery')? %>
               <!-- Enable a Consul based discovery strategy -->
              <discovery-strategies>
         
