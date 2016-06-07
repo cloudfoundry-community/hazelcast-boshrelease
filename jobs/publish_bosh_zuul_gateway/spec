@@ -1,0 +1,49 @@
+---
+name: publish_oauth_gateway
+packages:
+- oauth_gateway_pkg
+- cli
+templates:
+  bin/run: bin/run
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  bin/errand.sh.erb: bin/errand.sh
+
+properties:
+  oauth_gateway.loginServiceUrl:
+    description: login oauth service url
+  oauth_gateway.clientId:
+    description: oauth client id  
+  oauth_gateway.clientSecret:
+    description: oauth client secret
+  oauth_gateway.gatewayPath:
+    description: proxy context root
+    example: /**
+  oauth_gateway.backend_url:
+    description: protected backend url
+  oauth_gateway.jwtKeyValue:
+    description: public key for jwt token
+  cf.api_url:
+    description: 'Full URL of Cloud Foundry API'
+    example: 'https://api.your-domain.example.com'
+  cf.skip_ssl_validation:
+    description: 'Skip SSL validation when connecting to Cloud Foundry API'
+    default: false
+  cf.username:
+    description: 'Username of the admin user'
+  cf.password:
+    description: 'Password of the admin user'
+  cf.org:
+    description: 'Password of the admin user'
+    example: system_domain
+  cf.default_space:
+    description: 'Password of the admin user'
+    example: default
+  cf.target_space:
+    description: 'Password of the admin user'
+  cf.appname:
+    description: cf app name to push. will also be the hostname on cf.domain
+  cf.domain:
+    description: domain name to expose the gateway
+    
+    
