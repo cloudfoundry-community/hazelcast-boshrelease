@@ -1,7 +1,7 @@
 ---
-name: publish_oauth_gateway
+name: publish_bosh_zuul_gateway
 packages:
-- oauth_gateway_pkg
+- bosh_zuul_gateway_pkg
 - cli
 templates:
   bin/run: bin/run
@@ -10,19 +10,10 @@ templates:
   bin/errand.sh.erb: bin/errand.sh
 
 properties:
-  oauth_gateway.loginServiceUrl:
-    description: login oauth service url
-  oauth_gateway.clientId:
-    description: oauth client id  
-  oauth_gateway.clientSecret:
-    description: oauth client secret
-  oauth_gateway.gatewayPath:
-    description: proxy context root
-    example: /**
-  oauth_gateway.backend_url:
-    description: protected backend url
-  oauth_gateway.jwtKeyValue:
-    description: public key for jwt token
+  director_url:
+    description: bosh director url
+    example: https://10.0.0.1:25555
+    
   cf.api_url:
     description: 'Full URL of Cloud Foundry API'
     example: 'https://api.your-domain.example.com'
