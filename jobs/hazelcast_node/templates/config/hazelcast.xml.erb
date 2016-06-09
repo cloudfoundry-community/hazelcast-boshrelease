@@ -27,7 +27,6 @@
             <multicast enabled="false"/>
             <aws enabled="false"/>
               
-              <% if_p('hazelcast.use_consul_discovery')? %>
               <!-- Enable a Consul based discovery strategy -->
              <discovery-strategies>
         
@@ -229,9 +228,7 @@
              
              
              
-              <% else %>          
             <tcp-ip enabled="false" />
-              <% end %>             
              
               
         </join>
