@@ -1,5 +1,5 @@
 ---
-name: bosh_zuul_gateway_pkg
+name: bosh_deployer_pkg
 dependencies: []
 files:
 - bosh-deployer/**/*
