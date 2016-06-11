@@ -29,7 +29,11 @@ cf set-env $CF_APP_NAME JAVA_OPTS "-Djava.security.egd=file:/dev/urandom"
 cf set-env $CF_APP_NAME JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE '{enabled: true}'
 
 
-#TODO: inject director credentials
+#TODO: inject bosh deployer credentials
+
+cf set-env $CF_APP_NAME director_url <%= p("director.url") %>
+cf set-env $CF_APP_NAME director_user <%= p("director.user") %>
+cf set-env $CF_APP_NAME director_password <%= p("director.password") %>
 
 cf set-env $CF_APP_NAME SKIP_SSL_VALIDATION true
 

@@ -4,7 +4,7 @@ set -e # exit immediately if a simple command exits with a non-zero status
 set -u # report the usage of uninitialized variables
 
 # Setup env vars and folders for the webapp_ctl script
-source /var/vcap/jobs/publish_bosh_director/helpers/ctl_setup.sh 'publish_bosh_deployer'
+source /var/vcap/jobs/publish_bosh_deployer/helpers/ctl_setup.sh 'publish_bosh_deployer'
 
 /var/vcap/jobs/publish_bosh_deployer/bin/errand.sh
 

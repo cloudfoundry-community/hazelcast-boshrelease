@@ -10,9 +10,15 @@ templates:
   bin/errand.sh.erb: bin/errand.sh
 
 properties:
-  director_url:
+  director.url:
     description: bosh director url
     example: https://10.0.0.1:25555
+  director.user:
+    description: bosh director user
+    example: bosh-deployer
+  director.password:
+    description: bosh director password
+    example: xxxx
     
     
     
