@@ -229,9 +229,11 @@
              
              
             <tcp-ip enabled="false">
-	            <%= link("peers").instances.map { |ip| "<member>#{ip}</member>" }.join('') %>
+			<% peers = link('peers') %>
+			<% peers.instances.each do |instance| %>
+				<member><%= instance.address %></member>
+			<% end %>            
             </tcp-ip>
-             
               
         </join>
     </network>
