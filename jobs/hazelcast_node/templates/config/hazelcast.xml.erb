@@ -30,8 +30,15 @@
               <!-- Enable a Consul based discovery strategy -->
              <discovery-strategies>
         
-               <discovery-strategy enabled="true"
-                   class="org.bitsofinfo.hazelcast.discovery.consul.ConsulDiscoveryStrategy">
+      	       <% if p('hazelcast.use_consul_discovery')  %> 
+        	   
+               <discovery-strategy enabled="true" class="org.bitsofinfo.hazelcast.discovery.consul.ConsulDiscoveryStrategy">
+               
+               <% else %>
+               
+               <discovery-strategy enabled="false" class="org.bitsofinfo.hazelcast.discovery.consul.ConsulDiscoveryStrategy">
+               
+               <% end %>
         
                  <properties>
                        <!--  hostname or IP of the consul server -->
@@ -227,12 +234,17 @@
              </discovery-strategies>
              
              
-             
+        <% if p('hazelcast.use_consul_discovery')  %> 
             <tcp-ip enabled="false">
+            
+        <% else %>
+            <tcp-ip enabled="true">
 			<% peers = link('peers') %>
 			<% peers.instances.each do |instance| %>
 				<member><%= instance.address %></member>
-			<% end %>            
+			<% end %> 
+		<% end %>
+			           
             </tcp-ip>
               
         </join>
