@@ -228,7 +228,9 @@
              
              
              
-            <tcp-ip enabled="false" />
+            <tcp-ip enabled="false">
+	            <%= link("peers").instances.map { |ip| "<member>#{ip}</member>" }.join('') %>
+            </tcp-ip>
              
               
         </join>
