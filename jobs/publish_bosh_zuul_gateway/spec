@@ -13,6 +13,11 @@ properties:
   director_url:
     description: bosh director url
     example: https://10.0.0.1:25555
+
+  director.trusted_certificate_ca:
+    description:
+      Trusted  Root CA Certificate to be added to JVM truststore for director
+
     
   cf.api_url:
     description: 'Full URL of Cloud Foundry API'
