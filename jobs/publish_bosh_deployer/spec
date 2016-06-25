@@ -21,6 +21,22 @@ properties:
     description: bosh director password
     example: xxxx
 
+  broker.user:
+    description: cf service broker user
+    example: broker
+  broker.password:
+    description: cf service broker  password
+    example: xxxx
+
+  admin.user:
+    description: bosh deployer admin user
+    example: broker
+  admin.password:
+    description: bosh deployer admin password
+    example: xxxx
+
+
+
   cf.security_group:
     description: security group. must enable bosh director acces, or bosh zuul gateway to bosh director
     

@@ -40,6 +40,12 @@ cf set-env $CF_APP_NAME director_url <%= p("director.url") %>
 cf set-env $CF_APP_NAME director_user <%= p("director.user") %>
 cf set-env $CF_APP_NAME director_password <%= p("director.password") %>
 
+cf set-env $CF_APP_NAME broker_user <%= p("broker.user") %>
+cf set-env $CF_APP_NAME broker_password <%= p("broker.password") %>
+
+cf set-env $CF_APP_NAME admin_user <%= p("admin.user") %>
+cf set-env $CF_APP_NAME admin_password <%= p("admin.password") %>
+
 cf set-env $CF_APP_NAME SKIP_SSL_VALIDATION true
 
 #start cf app
