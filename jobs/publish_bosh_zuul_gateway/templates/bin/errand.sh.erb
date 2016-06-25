@@ -14,7 +14,7 @@ CF_TARGET_SPACE='<%= p("cf.target_space") %>'
 CF_APP_NAME='<%= p("cf.appname") %>'
 CF_DOMAIN='<%= p("cf.domain") %>'
 
-export TRUSTED_CA_CERTIFICATE="<%= p('director.trusted_certificate_ca').gsub('\\n', '') %>"
+export TRUSTED_CA_CERTIFICATE='<%= p('director.trusted_certificate_ca').gsub('\\n', "\\\n") %>'
 
 
 
@@ -33,7 +33,7 @@ cf set-env $CF_APP_NAME JAVA_OPTS "-Djava.security.egd=file:/dev/urandom"
 cf set-env $CF_APP_NAME JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE '{enabled: true}'
 cf set-env $CF_APP_NAME gatewayPath "/**"
 cf set-env $CF_APP_NAME backend_url <%= p('director_url') %>
-cf set-env $CF_APP_NAME TRUSTED_CA_CERTIFICATE $TRUSTED_CA_CERTIFICATE 
+cf set-env $CF_APP_NAME TRUSTED_CA_CERTIFICATE "$TRUSTED_CA_CERTIFICATE"
 
 cf set-env $CF_APP_NAME SKIP_SSL_VALIDATION true
 
