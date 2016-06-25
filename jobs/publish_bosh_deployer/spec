@@ -10,6 +10,7 @@ templates:
   bin/errand.sh.erb: bin/errand.sh
 
 properties:
+
   director.url:
     description: bosh director url
     example: https://10.0.0.1:25555
@@ -19,6 +20,9 @@ properties:
   director.password:
     description: bosh director password
     example: xxxx
+
+  cf.security_group:
+    description: security group. must enable bosh director acces, or bosh zuul gateway to bosh director
     
     
     

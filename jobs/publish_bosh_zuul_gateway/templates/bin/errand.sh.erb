@@ -22,6 +22,10 @@ cf login -a $CF_API_URL  -u $CF_USERNAME -p $CF_PASSWORD  -o $CF_ORG -s $CF_DEFA
 
 cf create-space $CF_TARGET_SPACE
 cf target -s $CF_TARGET_SPACE
+
+#bind security group
+cf bind-security-group  <%= p("cf.security_group") %> $CF_ORG $CF_TARGET_SPACE
+
 cf push $CF_APP_NAME  -p /var/vcap/packages/bosh_zuul_gateway_pkg/bosh_zuul-proxy.jar -b java_buildpack -i 2 --no-start --no-route -t 120
 
 #map the route on specified domain
