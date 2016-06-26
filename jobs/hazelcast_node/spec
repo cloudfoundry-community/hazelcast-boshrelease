@@ -29,7 +29,7 @@ templates:
 properties:
   hazelcast.use_consul_discovery:
     description: should hazelcast node use consul discovery. otherwise, bosh links consume/provides must be set
-    default: true
+    default: false
   hazelcast.group.name:
     description:
       name of the hazelcast group
