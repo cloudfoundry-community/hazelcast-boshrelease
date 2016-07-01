@@ -23,7 +23,7 @@ cf target -s $CF_TARGET_SPACE
 cf bind-security-group  <%= p("cf.security_group") %> $CF_ORG $CF_TARGET_SPACE
 
 
-cf push $CF_APP_NAME  -p /var/vcap/packages/bosh_deployer_pkg/bosh-deployer.jar -i 1 -b java_buildpack --no-start --no-route -t 120
+cf push $CF_APP_NAME  -p /var/vcap/packages/bosh_deployer_pkg/bosh-deployer.jar -i 1 -m 1G -b java_buildpack --no-start --no-route -t 120
 
 #map the route on specified domain
 cf map-route $CF_APP_NAME $CF_DOMAIN --hostname $CF_APP_NAME  
