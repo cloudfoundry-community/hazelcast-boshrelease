@@ -1,9 +1,6 @@
 [submodule "src/hazelcast-bosh-uberjar"]
 	path = src/hazelcast-bosh-uberjar
 	url = https://github.com/cloudfoundry-community/hazelcast-bosh-uberjar
-[submodule "src/hazelcast-cloudfoundry"]
-	path = src/hazelcast-cloudfoundry
-	url = https://github.com/hazelcast/hazelcast-cloudfoundry
 [submodule "src/java-openjdk-boshrelease"]
 	path = src/java-openjdk-boshrelease
 	url = https://github.com/Orange-OpenSource/java-openjdk-boshrelease
