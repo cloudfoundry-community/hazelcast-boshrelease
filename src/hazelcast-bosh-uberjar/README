@@ -1,0 +1,6 @@
+This is an hazelcast jar repackaging, including dependencies for discovery (consul discovery)
+see
+* https://github.com/bitsofinfo/hazelcast-consul-discovery-spi
+
+
+NB: maven wrapper to initialize with mvn  -N io.takari:maven:wrapper
