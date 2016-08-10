@@ -239,10 +239,7 @@
             
         <% else %>
             <tcp-ip enabled="true">
-            <members>
-			<% peers = link('peers') %>
-			<% peers.instances.each do |instance| %><%= instance.address %>,
-			<% end %> 
+            <members><% peers = link('peers') %><% peers.instances.each do |instance| %><%= instance.address %>,<% end %> 
 			</members>
 		<% end %>
 			           
