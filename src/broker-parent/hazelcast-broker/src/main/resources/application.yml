@@ -1,0 +1,75 @@
+server:
+  port: ${PORT:8080}
+management:
+  context-path: /admin
+
+spring:
+  application:
+    name: bosh-deployer
+
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    enabled: false
+    base-url: http://zipkin-server 
+
+  jpa:
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+security:
+  ignored: /favicon.ico, /
+  basic:
+    enabled: false
+  user:
+    password: none
+
+logging:
+  level:
+    ROOT: INFO
+    feign.Logger: DEBUG
+    feign.Contract: DEBUG
+    com.orange.oss.bosh.deployer: DEBUG
+    com.orange.oss.bosh.deployer.BoshFeignClient: DEBUG
+    org.springframework.web.client: DEBUG
+    org.springframework.web.client.HttpMessageConverterExtractor: DEBUG
+    
+
+hystrix:
+   command.getInfo.execution.isolation.thread.timeoutInMilliseconds: 30000
+   command.getInfo.circuitBreaker.requestVolumeThreshold: 4
+   command.getInfo.circuitBreaker.sleepWindowInMilliseconds: 60000
+   command.getInfo.metrics.rollingStats.timeInMilliseconds: 180000
+   collapser.getInfo.maxRequestsInBatch: 1
+   collapser.getInfo.requestCache.enabled: FALSE
+   threadpool.getInfo.coreSize: 30
+   threadpool.getInfo.metrics.rollingStats.timeInMilliseconds: 180000 
+
+feign:
+  hystrix:
+    enabled: false
+  okhttpclient:
+    enabled: true
+  httpclient:
+    enabled: false #to enable okhttp client
+   
+director:
+  url: https://bosh2
+  user: bosh-deployer
+  password: xxx
+  proxyHost: ""
+  proxyPort: 3128
+
+broker:
+  user: broker
+  password: xx
+
+admin:
+  user: admin
+  password: yy
+
+   
+   
