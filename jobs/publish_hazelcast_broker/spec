@@ -1,7 +1,7 @@
 ---
 name: publish_hazelcast_broker
 packages:
-- bosh_deployer_pkg
+- hazelcast-broker-pkg
 - cli
 templates:
   bin/run: bin/run
