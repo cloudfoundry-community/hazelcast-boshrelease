@@ -1,5 +1,5 @@
 ---
-name: publish_bosh_deployer
+name: publish_hazelcast_broker
 packages:
 - bosh_deployer_pkg
 - cli
