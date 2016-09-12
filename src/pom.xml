@@ -9,6 +9,6 @@
 	<packaging>pom</packaging>
 	<modules>
         <module>hazelcast-broker</module>
-		<module>bosh-deployer-broker</module>        
+	<module>bosh-deployer</module>        
 	</modules>
 </project>
