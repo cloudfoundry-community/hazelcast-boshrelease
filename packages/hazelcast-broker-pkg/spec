@@ -1,7 +1,7 @@
 ---
-name: hazelcast_broker_pkg 
+name: hazelcast-broker-pkg 
 dependencies: []
 files:
-- bosh-deployer/**/*
+- broker-parent/**/*
 - openjdk/*
 - common/setup-java-prepackaging.sh

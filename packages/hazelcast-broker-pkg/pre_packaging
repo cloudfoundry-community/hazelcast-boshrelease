@@ -4,11 +4,10 @@ set -x
 
 . common/setup-java-prepackaging.sh
 
-cd ${BUILD_DIR}
+cd ${BUILD_DIR}/broker-parent
 ./mvnw clean install -DskipTests=true --settings settings.xml
 mv hazelcast-broker/target/hazelcast-broker-0.0.1-SNAPSHOT.jar  ${BUILD_DIR}
 
 cd ${BUILD_DIR}
-rm -rf bosh-deployer
-rm -rf hazelcast-broker
+rm -rf broker-parent 
 

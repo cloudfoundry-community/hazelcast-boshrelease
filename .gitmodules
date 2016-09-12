@@ -5,5 +5,5 @@
 	path = src/yardstick-hazelcast
 	url = https://github.com/hazelcast/yardstick-hazelcast
 [submodule "src/bosh-deployer"]
-	path = src/bosh-deployer
+	path = src/broker-parent/bosh-deployer
 	url = https://github.com/poblin-orange/bosh-deployer
