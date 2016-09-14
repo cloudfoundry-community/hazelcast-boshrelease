@@ -35,12 +35,16 @@ properties:
     description: bosh deployer admin password
     example: xxxx
 
+  db.service:
+    description: db market place service to use for the broker
+    default: p-mysql
 
+  db.plan:
+    description: db market place service plan to use for the broker
+    default: 100mb
 
   cf.security_group:
     description: security group. must enable bosh director acces, or bosh zuul gateway to bosh director
-    
-    
     
   cf.api_url:
     description: 'Full URL of Cloud Foundry API'

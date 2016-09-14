@@ -29,6 +29,11 @@ cf push $CF_APP_NAME  -p /var/vcap/packages/hazelcast-broker-pkg/hazelcast-broke
 cf map-route $CF_APP_NAME $CF_DOMAIN --hostname $CF_APP_NAME  
 
 
+#create and bind mysql db service
+cf create-service <%= p("db.service") %> <%= p("db.plan") %> hazelcast-broker-mysql
+cf bind-service $CF_APP_NAME hazelcast-broker-mysql
+
+
 #set cf env properties
 cf set-env $CF_APP_NAME JAVA_OPTS "-Djava.security.egd=file:/dev/urandom"
 cf set-env $CF_APP_NAME JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE '{enabled: true}'
