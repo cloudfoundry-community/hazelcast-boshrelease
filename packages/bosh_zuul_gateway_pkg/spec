@@ -1,7 +1,0 @@
----
-name: bosh_zuul_gateway_pkg
-dependencies: []
-files:
-- bosh_zuul_gateway/**/*
-- openjdk/*
-- common/setup-java-prepackaging.sh
