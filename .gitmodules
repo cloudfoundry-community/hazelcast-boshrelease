@@ -7,3 +7,6 @@
 [submodule "src/bosh-deployer"]
 	path = src/broker-parent/bosh-deployer
 	url = https://github.com/poblin-orange/bosh-deployer
+[submodule "src/broker-parent/spring-cloud-cloudfoundry-service-broker"]
+	path = src/broker-parent/spring-cloud-cloudfoundry-service-broker
+	url = https://github.com/orange-cloudfoundry/spring-cloud-cloudfoundry-service-broker
